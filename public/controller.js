@@ -1,0 +1,1 @@
+document.querySelector('div.present .form button').addEventListener('click', app.sendText)

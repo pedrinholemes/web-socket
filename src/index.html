@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holyrics</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
+    <script src="https://unpkg.com/native-toast@1.2.1/dist/native-toast.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/native-toast@1.2.1/dist/native-toast.css">
+</head>
+
+<body>
+    <div class="present">
+        <div class=form>
+            <input type="text" name="name">
+            <select name="type">
+                  <option value="">Selecione o tipo de uso do cliente</option>
+                  <option value="brodcasting">Screen</option>
+                <option value="controller">User</option>
+                </select>
+            <button>Entrar</button>
+        </div>
+    </div>
+    <div class="controller hide">
+        <div class="form">
+            <input type="text" name="showText">
+            <button>Mostrar</button>
+            <a class="toggle" href="javascript:true">Histórico</a>
+            <div class="historyText hide">
+                <a class="toggle" href="javascript:true">Fechar Histórico</a>
+                <ul id="textList"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="brodcasting hide">
+        <div class="screen">
+            Teste <br> 1234567890 <br> Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/app.js"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
